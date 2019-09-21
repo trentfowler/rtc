@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS1302N+ U?
+U 1 1 5D85BF93
+P 2500 2200
+F 0 "U?" H 2600 2700 50  0000 L CNN
+F 1 "DS1302N+" H 2600 2600 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2500 1700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 2500 2000 50  0001 C CNN
+	1    2500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5D85EEF2
+P 1700 2650
+F 0 "Y?" H 1700 2918 50  0000 C CNN
+F 1 "32.768" H 1700 2827 50  0000 C CNN
+F 2 "" H 1700 2650 50  0001 C CNN
+F 3 "~" H 1700 2650 50  0001 C CNN
+	1    1700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2300 1450 2300
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5D860FFA
+P 1650 1550
+F 0 "BT?" V 1395 1600 50  0000 C CNN
+F 1 "CR2032" V 1486 1600 50  0000 C CNN
+F 2 "" V 1650 1610 50  0001 C CNN
+F 3 "~" V 1650 1610 50  0001 C CNN
+	1    1650 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 2300 1450 2650
+Wire Wire Line
+	1550 2650 1450 2650
+Wire Wire Line
+	1950 2400 2000 2400
+Wire Wire Line
+	1950 2400 1950 2650
+Wire Wire Line
+	1850 2650 1950 2650
+$Comp
+L Device:C C?
+U 1 1 5D866396
+P 1450 3000
+F 0 "C?" H 1565 3046 50  0000 L CNN
+F 1 "C" H 1565 2955 50  0000 L CNN
+F 2 "" H 1488 2850 50  0001 C CNN
+F 3 "~" H 1450 3000 50  0001 C CNN
+	1    1450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D867589
+P 1950 3000
+F 0 "C?" H 2065 3046 50  0000 L CNN
+F 1 "C" H 2065 2955 50  0000 L CNN
+F 2 "" H 1988 2850 50  0001 C CNN
+F 3 "~" H 1950 3000 50  0001 C CNN
+	1    1950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3350 1950 3350
+Wire Wire Line
+	1450 2650 1450 2850
+Connection ~ 1450 2650
+Wire Wire Line
+	1450 3150 1450 3350
+Wire Wire Line
+	1950 3150 1950 3350
+Connection ~ 1950 3350
+Wire Wire Line
+	1950 3350 2500 3350
+Wire Wire Line
+	1950 2850 1950 2650
+Connection ~ 1950 2650
+Wire Wire Line
+	2500 2600 2500 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5D86A1B2
+P 2500 3650
+F 0 "#PWR?" H 2500 3400 50  0001 C CNN
+F 1 "GND" H 2505 3477 50  0000 C CNN
+F 2 "" H 2500 3650 50  0001 C CNN
+F 3 "" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3350 2500 3650
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 5D86BE0F
+P 3200 2850
+F 0 "J?" H 3280 2892 50  0000 L CNN
+F 1 "Conn_01x05" H 3280 2801 50  0000 L CNN
+F 2 "" H 3200 2850 50  0001 C CNN
+F 3 "~" H 3200 2850 50  0001 C CNN
+	1    3200 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1550 850  3350
+Connection ~ 1450 3350
+Wire Wire Line
+	2400 1550 2400 1800
+Wire Wire Line
+	1850 1550 2400 1550
+$Comp
+L Device:R R?
+U 1 1 5D87848B
+P 3100 1650
+F 0 "R?" H 3170 1696 50  0000 L CNN
+F 1 "10k" V 3100 1550 50  0000 L CNN
+F 2 "" V 3030 1650 50  0001 C CNN
+F 3 "~" H 3100 1650 50  0001 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D87A0D8
+P 1500 2000
+F 0 "R?" V 1450 2100 50  0000 L CNN
+F 1 "10k" V 1500 1900 50  0000 L CNN
+F 2 "" V 1430 2000 50  0001 C CNN
+F 3 "~" H 1500 2000 50  0001 C CNN
+	1    1500 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D87AFD2
+P 1500 2100
+F 0 "R?" V 1450 2200 50  0000 L CNN
+F 1 "10k" V 1500 2000 50  0000 L CNN
+F 2 "" V 1430 2100 50  0001 C CNN
+F 3 "~" H 1500 2100 50  0001 C CNN
+	1    1500 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D874E7B
+P 2500 1150
+F 0 "#PWR?" H 2500 1000 50  0001 C CNN
+F 1 "+5V" H 2515 1323 50  0000 C CNN
+F 2 "" H 2500 1150 50  0001 C CNN
+F 3 "" H 2500 1150 50  0001 C CNN
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D87CD03
+P 1000 1900
+F 0 "#PWR?" H 1000 1750 50  0001 C CNN
+F 1 "+5V" H 900 2050 50  0000 L CNN
+F 2 "" H 1000 1900 50  0001 C CNN
+F 3 "" H 1000 1900 50  0001 C CNN
+	1    1000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2000 1350 2000
+Wire Wire Line
+	1150 2100 1350 2100
+Wire Wire Line
+	1150 2000 1150 2050
+Wire Wire Line
+	1000 1900 1000 2050
+Wire Wire Line
+	1000 2050 1150 2050
+Connection ~ 1150 2050
+Wire Wire Line
+	1150 2050 1150 2100
+Wire Wire Line
+	2500 1150 2500 1300
+Wire Wire Line
+	3000 2000 3100 2000
+Wire Wire Line
+	3100 2000 3100 1800
+Wire Wire Line
+	3100 1300 2500 1300
+Connection ~ 2500 1300
+Wire Wire Line
+	2500 1300 2500 1800
+Wire Wire Line
+	3100 1300 3100 1500
+Wire Wire Line
+	850  1550 1550 1550
+Wire Wire Line
+	850  3350 1450 3350
+Wire Wire Line
+	1650 2000 2000 2000
+Wire Wire Line
+	1650 2100 2000 2100
+Text Label 1800 2000 0    50   ~ 0
+SDA
+Text Label 3100 2000 0    50   ~ 0
+SCL
+Text Label 1800 2100 0    50   ~ 0
+RST
+Wire Wire Line
+	3400 2650 3600 2650
+Wire Wire Line
+	3400 2750 3600 2750
+Wire Wire Line
+	3400 2850 3600 2850
+Text Label 3600 2650 0    50   ~ 0
+SCL
+Text Label 3600 2750 0    50   ~ 0
+SDA
+Text Label 3600 2850 0    50   ~ 0
+RST
+Wire Wire Line
+	3850 2950 3850 1300
+Wire Wire Line
+	3850 1300 3100 1300
+Wire Wire Line
+	3400 2950 3850 2950
+Connection ~ 3100 1300
+Wire Wire Line
+	3850 3050 3850 3350
+Wire Wire Line
+	3850 3350 2500 3350
+Wire Wire Line
+	3400 3050 3850 3050
+Connection ~ 2500 3350
+$EndSCHEMATC

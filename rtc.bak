@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS1302N+ U?
+U 1 1 5D85BF93
+P 2500 2200
+F 0 "U?" H 2600 2700 50  0000 L CNN
+F 1 "DS1302N+" H 2600 2600 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2500 1700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf" H 2500 2000 50  0001 C CNN
+	1    2500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5D85EEF2
+P 1700 2650
+F 0 "Y?" H 1700 2918 50  0000 C CNN
+F 1 "Crystal" H 1700 2827 50  0000 C CNN
+F 2 "" H 1700 2650 50  0001 C CNN
+F 3 "~" H 1700 2650 50  0001 C CNN
+	1    1700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2300 1450 2300
+Wire Wire Line
+	2500 3000 2500 2600
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5D860FFA
+P 1700 1550
+F 0 "BT?" V 1445 1600 50  0000 C CNN
+F 1 "CR2032" V 1536 1600 50  0000 C CNN
+F 2 "" V 1700 1610 50  0001 C CNN
+F 3 "~" V 1700 1610 50  0001 C CNN
+	1    1700 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1550 1450 1550
+Wire Wire Line
+	1450 1550 1450 2300
+Connection ~ 1450 2300
+Wire Wire Line
+	1450 2300 1450 2650
+Wire Wire Line
+	1550 2650 1450 2650
+Connection ~ 1450 2650
+Wire Wire Line
+	1450 2650 1450 3000
+Connection ~ 1950 3000
+Wire Wire Line
+	1950 3000 2500 3000
+Wire Wire Line
+	1450 3000 1950 3000
+Wire Wire Line
+	1950 2400 2000 2400
+Wire Wire Line
+	1950 2400 1950 2650
+Wire Wire Line
+	1850 2650 1950 2650
+Connection ~ 1950 2650
+Wire Wire Line
+	1950 2650 1950 3000
+Wire Wire Line
+	1900 1550 2400 1550
+Wire Wire Line
+	2400 1550 2400 1800
+$Comp
+L power:+5V #PWR?
+U 1 1 5D8658E4
+P 2500 1350
+F 0 "#PWR?" H 2500 1200 50  0001 C CNN
+F 1 "+5V" H 2515 1523 50  0000 C CNN
+F 2 "" H 2500 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0001 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1800 2500 1350
+$EndSCHEMATC
