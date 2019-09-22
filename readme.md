@@ -7,7 +7,7 @@ DS1302 - https://datasheets.maximintegrated.com/en/ds/DS1302.pdf
 
 ![schematic](https://i.imgur.com/dvHCrEb.png)
 
-![pcb](https://i.imgur.com/EZPYXuh.png)
+![3d](https://i.imgur.com/g3TJsUs.png)
 
-![3d](https://i.imgur.com/46kvooO.png)
+![pcb](https://i.imgur.com/rdnZ0wU.png)
 
