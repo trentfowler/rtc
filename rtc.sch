@@ -45,11 +45,6 @@ Wire Wire Line
 Wire Wire Line
 	1850 2850 1950 2850
 Wire Wire Line
-	1450 3350 1950 3350
-Connection ~ 1950 3350
-Wire Wire Line
-	1950 3350 2500 3350
-Wire Wire Line
 	2500 2600 2500 3350
 $Comp
 L rtc-rescue:GND-power #PWR02
@@ -73,9 +68,6 @@ F 3 "~" H 3150 2850 50  0001 C CNN
 	1    3150 2850
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1450 3350
-Wire Wire Line
-	850  3350 1450 3350
 Wire Wire Line
 	1650 2000 2000 2000
 Wire Wire Line
@@ -157,12 +149,6 @@ F 3 "" H 2400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2400 1500
-Connection ~ 1450 2850
-Wire Wire Line
-	1450 2850 1450 3350
-Connection ~ 1950 2850
-Wire Wire Line
-	1950 2850 1950 3350
 Wire Wire Line
 	1450 2300 1450 2850
 Wire Wire Line
@@ -204,4 +190,6 @@ Wire Wire Line
 Connection ~ 850  3350
 Wire Wire Line
 	2500 3350 3800 3350
+Wire Wire Line
+	850  3350 2500 3350
 $EndSCHEMATC

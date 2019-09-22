@@ -83,7 +83,7 @@ Wire Wire Line
 Text Label 1800 2000 0    50   ~ 0
 SCLK
 Text Label 3050 2000 0    50   ~ 0
-DAT
+IO
 Text Label 1800 2100 0    50   ~ 0
 CE
 Wire Wire Line
@@ -95,7 +95,7 @@ Wire Wire Line
 Text Label 3550 2650 0    50   ~ 0
 SCLK
 Text Label 3550 2750 0    50   ~ 0
-DAT
+IO
 Text Label 3550 2850 0    50   ~ 0
 CE
 Wire Wire Line
