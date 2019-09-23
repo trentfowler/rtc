@@ -5,9 +5,10 @@
 
 DS1302 - https://datasheets.maximintegrated.com/en/ds/DS1302.pdf
 
-![schematic](https://i.imgur.com/dvHCrEb.png)
+![schematic](https://i.imgur.com/LXBE2bn.png)
 
-![3d](https://i.imgur.com/g3TJsUs.png)
+![3d](https://i.imgur.com/qPBAPDq.png)
 
-![pcb](https://i.imgur.com/rdnZ0wU.png)
+![pcb front](https://i.imgur.com/4CxzNEO.png)
 
+![pcb back](https://i.imgur.com/HhG7MJW.png)
