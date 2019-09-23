@@ -41,7 +41,7 @@ U 1 1 5D86BE0F
 P 3150 2850
 F 0 "J1" H 3230 2892 50  0000 L CNN
 F 1 "Conn_01x05" H 3230 2801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3150 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 3150 2850 50  0001 C CNN
 F 3 "~" H 3150 2850 50  0001 C CNN
 	1    3150 2850
 	-1   0    0    -1  
@@ -80,10 +80,10 @@ L rtc-rescue:Battery_Cell-Device BT1
 U 1 1 5D892343
 P 800 2500
 F 0 "BT1" H 900 2600 50  0000 L CNN
-F 1 "Battery_Cell" H 900 2500 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 800 2560 50  0001 C CNN
+F 1 "CR2032" H 900 2500 50  0000 L CNN
+F 2 "rtc:BatteryHolder_Keystone_103_1x20mm" V 800 2560 50  0001 C CNN
 F 3 "~" V 800 2560 50  0001 C CNN
-F 4 "36-1060-ND" H 1150 2400 50  0000 C CNN "digikey"
+F 4 "36-103-ND" H 1150 2400 50  0000 C CNN "digikey"
 	1    800  2500
 	1    0    0    -1  
 $EndComp

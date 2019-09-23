@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\trent\Documents\pcbs\rtc\rtc.sch)
-    (date "9/22/2019 11:34:42 PM")
+    (date "9/23/2019 1:12:38 AM")
     (tool "Eeschema (5.1.2)-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -24,7 +24,7 @@
       (tstamp 5D86BE0F))
     (comp (ref BT1)
       (value CR2032)
-      (footprint Battery:BatteryHolder_Keystone_103_1x20mm)
+      (footprint rtc:BatteryHolder_Keystone_103_1x20mm)
       (datasheet ~)
       (fields
         (field (name digikey) 36-103-ND))
