@@ -5,6 +5,8 @@
 
 DS1302 - https://datasheets.maximintegrated.com/en/ds/DS1302.pdf
 
+BOM - https://www.digikey.com/short/p2twq1
+
 ![schematic](https://i.imgur.com/LXBE2bn.png)
 
 ![3d](https://i.imgur.com/qPBAPDq.png)
